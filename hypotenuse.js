@@ -7,4 +7,11 @@ function calculateSumOfsquares(a, b) {
     return sumOfSquares;
 }
 
+function calculateHypotenuse() {
+    const sumOfSquares = calculateSumOfsquares(Number(sides[0].value), Number(sides[1].value));
+    const lengthOfHypotenuse = Math.sqrt(sumOfSquares);
+    outputEl.innerText = "The length of Hypotenuse is " + lengthOfHypotenuse + " units";
+
+}
+
 hypotenuseBtn.addEventListener("click", calculateHypotenuse);
