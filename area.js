@@ -7,6 +7,13 @@ function multiplyBaseAndHeight(base, height) {
     return multipliedOutput;
 }
 
+function calculateArea() {
+    //area = (base * height)/2
+    const basexheight = multiplyBaseAndHeight(Number(inputs[0].value), Number(inputs[1].value));
+    const area = basexheight / 2;
+    areaOutput.innerText = "The area of the triangle is " + area + " units²";
+}
+
 
 
 areaBtn.addEventListener('click', calculateArea);

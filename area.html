@@ -13,36 +13,31 @@
 
 <body>
     <nav>
-
         <section>
             <div>
                 <a href="index.html">Home</a>
                 <a href="istriangle.html">Is Triangle?</a>
-                <a href="hypotenuse.html" class="item-active">Hypotenuse</a>
-                <a href="area.html">Area</a>
+                <a href="hypotenuse.html">Hypotenuse</a>
+                <a href="area.html" class="item-active">Area</a>
                 <a href="">Quiz</a>
             </div>
         </section>
-
     </nav>
 
-    <h1>Calculate Hypotenuse</h1>
-    <h2>Enter the length of the sides of the right angle triangle to obtain the hypotenuse.</h2>
-    <h2 class="formula">Length of Hypotenuse = sqrt(a² + b²)</h2>
-
+    <h1>Area Of Triangle</h1>
+    <h2>Enter the base and the height of the triangle to obtain the area</h2>
+    <h2 class="formula">Area of a triangle = 1/2(Base * Height)</h2>
     <div class="angle-container">
-
         <div class="input-container">
-            <label>Enter side a = </label>
-            <input type="number" class="side-input" />
+            <label>Enter the Base:</label>
+            <input type="number" class="area-input" />
         </div>
         <div class="input-container">
-            <label>Enter side b = </label>
-            <input type="number" class="side-input" />
+            <label>Enter the Height</label>
+            <input type="number" class="area-input" />
         </div>
-        <button class="btn" id="hypotenuse-btn">Calculate Hypotenuse</button>
+        <button class="btn" id="area-btn">Calculate Area</button>
         <div class="op" id="output"></div>
-
     </div>
 
     <footer>
@@ -63,10 +58,7 @@
 
 
 
-
-
-
-    <script src="hypotenuse.js"></script>
+    <script src="area.js"></script>
 </body>
 
 </html>
